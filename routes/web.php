@@ -12,6 +12,7 @@
 */
 
 Route::get('/', function () {
-    $blogitem = \App\BlogItem::find(1);
-    dd($blogitem->body);
+    //$blogitem = \App\BlogItem::find(1);
+    //dd($blogitem->body);
+    return view('landing');
 });
