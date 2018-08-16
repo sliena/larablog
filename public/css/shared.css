@@ -1,0 +1,9 @@
+.nav li a {
+    color: white;
+};
+h1 {
+    color: blue;
+}
+#nav-container {
+    position: fixed;
+}

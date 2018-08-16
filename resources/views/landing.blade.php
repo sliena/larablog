@@ -7,13 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="/laravel/larablog/public/css/shared.css"> 
     <title>Blog</title>
   </head>
 
   <body>
-    <div class="container-fluid">
-        <nav class="navbar sticky-top navbar-expand-lg navbar-dark" style="background-color: #330b5b;">
+    <div class="container-fluid" id="nav-container">
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #330b5b;">
             <a class="navbar-brand" href="#" style="color: red">Blogs</a>
             <nav class="ml-md-auto">
                 <ul class="nav">
