@@ -1,9 +1,12 @@
 .nav li a {
     color: white;
 };
-h1 {
-    color: blue;
-}
 #nav-container {
     position: fixed;
+}
+.navbar-dark .navbar-brand {
+    color: red;
+}
+.navbar {
+    background-color: #330b5b;
 }
