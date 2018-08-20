@@ -1,18 +1,25 @@
+body {
+    background-image: linear-gradient(black, grey);
+}
 .nav li a {
     color: white;
     opacity: 0.5;
+    border: 1px solid black;
 }
 .nav li a:hover {
     opacity: 1;
+    border: 1px solid white;
 }
 #nav-container {
     position: fixed;
 }
 .navbar-dark .navbar-brand {
-    color: red;
+    color: black;
+    text-shadow: 1px 1px white;
+    font-size: 30px;
 }
 .navbar {
-    background-color: indigo;
+    background-color: black;
 }
 /*scroll to top button*/
 #myBtn {
@@ -24,7 +31,7 @@
     font-size: 18px;
     border: none;
     outline: none;
-    background-color: indigo;
+    background-color: black;
     color: rgba(255,255,255,0.5);
     cursor: pointer;
     padding: 15px;
@@ -32,5 +39,6 @@
   }
   #myBtn:hover {
       color: rgba(255,255,255,1);
+      border: 1px solid white;
   }
   

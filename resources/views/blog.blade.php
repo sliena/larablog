@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="/laravel/larablog/public/css/blog.css"> 
 
         
-        <title>Blog</title>
+        <title>Zlog</title>
     
     
     
@@ -22,7 +22,7 @@
     <div class="container-fluid">
         <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="/laravel/larablog/public/">Blogs</a>            
+                <a class="navbar-brand" href="/laravel/larablog/public/">Zlog</a>            
                 <ul class="nav ml-auto">
                     <li class="nav-item">
                         <a class="nav-link active"  href="/laravel/larablog/public/">Home</a>
@@ -40,11 +40,16 @@
 
 
 <div class="container-fluid">
-<img src="https://www.w3schools.com/w3css/img_lights.jpg" class="img-fluid" alt="Responsive image">
+<img src="https://www.w3schools.com/w3css/img_lights.jpg" class="img-fluid rounded mx-auto d-block" alt="Responsive image">
+
+<div class="text-block"> 
+    <h6>{{$blogtitle}}</h6>
+  </div>
 </div>
 
 
-    <h1>{{$blogtitle}}</h1>
+
+    <h1></h1>
     <p>{{$blogbody}}</p>
 
 

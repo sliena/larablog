@@ -1,24 +1,58 @@
+body {
+    background-image: linear-gradient(black, grey);
+}
 .carousel .carousel-inner .carousel-item img {
     height: 400px;
 }
 .card {
-    display: inline;
+    margin: 1rem;
+}
+.card-title {
+    color: white;
+}
+.card-body {
+    width: 300px;
+}
+.card-block {
+    margin: 20px;
+}
+.card-img-overlay {
+    height: 60%;
+}
+p.card-text {
+    overflow: hidden;
+    height: 4rem;
 }
 h2.card-title:first-letter {
     text-transform: capitalize;    
 }
+#ofdiv {
+    height: 8rem;
+    overflow: hidden;
+}
 .page-item {
     margin: 0 auto;
 }
-.page-item.disabled .page-link {
-    background-color: indigo;
-    color: rgba(255,255,255,0.5);    
+.page-item.disabled  {
+    visibility: hidden;    
 }
 .page-link {
-    background-color: indigo;
+    background-color: black;
     color: rgba(255,255,255,0.5);
+    border:none;
 }
 .page-link:hover {
-    background-color: indigo;
+    background-color: black;
     color: rgba(255,255,255,1);
+    border: 1px solid white;
+}
+.btn-primary {
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+}
+.btn-primary:hover {
+    color: white;
+    background-color: black;
+    border: 1px solid black;
 }
