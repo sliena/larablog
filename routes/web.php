@@ -11,26 +11,6 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('/', 'BlogItemController@show');
 
-    $blogitem = \App\BlogItem::get();
-
-    return view('landing', [
-
-        'items' => $blogitem,
-
-    ]);
-});
-
-Route::get('/blog/{id}', function ($id) {
-
-    $blogitem = \App\BlogItem::find($id);
-
-
-    return view('blog', [
-
-        'blogbody' => $blogitem->body,
-        'blogtitle' => $blogitem->title,
-
-    ]);
-});
+Route::get('/blog/{id}', 'BlogItemController@blogId');

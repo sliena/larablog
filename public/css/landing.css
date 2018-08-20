@@ -7,3 +7,18 @@
 h2.card-title:first-letter {
     text-transform: capitalize;    
 }
+.page-item {
+    margin: 0 auto;
+}
+.page-item.disabled .page-link {
+    background-color: indigo;
+    color: rgba(255,255,255,0.5);    
+}
+.page-link {
+    background-color: indigo;
+    color: rgba(255,255,255,0.5);
+}
+.page-link:hover {
+    background-color: indigo;
+    color: rgba(255,255,255,1);
+}
