@@ -12,7 +12,25 @@
 */
 
 Route::get('/', function () {
-    //$blogitem = \App\BlogItem::find(1);
-    //dd($blogitem->body);
-    return view('landing');
+
+    $blogitem = \App\BlogItem::get();
+
+    return view('landing', [
+
+        'items' => $blogitem,
+
+    ]);
+});
+
+Route::get('/blog/{id}', function ($id) {
+
+    $blogitem = \App\BlogItem::find($id);
+
+
+    return view('blog', [
+
+        'blogbody' => $blogitem->body,
+        'blogtitle' => $blogitem->title,
+
+    ]);
 });

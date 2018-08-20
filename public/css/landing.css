@@ -1,0 +1,9 @@
+.carousel .carousel-inner .carousel-item img {
+    height: 400px;
+}
+.card {
+    display: inline;
+}
+h2.card-title:first-letter {
+    text-transform: capitalize;    
+}

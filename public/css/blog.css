@@ -1,0 +1,6 @@
+h1 {
+    margin-top: 3rem;
+}
+h1:first-letter {
+    text-transform: capitalize;
+}

@@ -1,6 +1,10 @@
 .nav li a {
     color: white;
-};
+    opacity: 0.5;
+}
+.nav li a:hover {
+    opacity: 1;
+}
 #nav-container {
     position: fixed;
 }
