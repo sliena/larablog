@@ -17,7 +17,8 @@ class BlogItemController extends Controller
     
         ]);
     }
-    public function blogId($id) {
+    
+    public function blog_id($id) {
 
         $blogitem = \App\BlogItem::find($id);
     
@@ -29,4 +30,11 @@ class BlogItemController extends Controller
     
         ]);
     }
+
+    public function contacts() {
+
+        return view('contacts');
+    }
+
+    
 }

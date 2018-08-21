@@ -1,0 +1,32 @@
+body {
+    background-image: linear-gradient(black, grey);
+}
+div.container {
+    margin-left: 0;
+    margin-top: 10rem;
+}
+iframe {
+    border: 1px solid black;
+    margin-top: 10rem;
+    float: right;
+    margin-right: 10rem;
+}
+.btn {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+.btn:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+}
+.form-control {
+    border: 1px solid black;
+}
+#formCol {
+    margin: 0 10rem;
+}
+label {
+    color: white;
+}

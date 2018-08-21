@@ -13,4 +13,8 @@
 
 Route::get('/', 'BlogItemController@show');
 
-Route::get('/blog/{id}', 'BlogItemController@blogId');
+Route::get('/blog/{id}', 'BlogItemController@blog_id');
+
+Route::get('/contacts', 'BlogItemController@contacts');
+
+Route::post('/contacts', 'FormController@save_form');
