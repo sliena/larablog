@@ -1,11 +1,21 @@
 body {
-    background-image: linear-gradient(black, grey);
+    background-image: radial-gradient(gray, black);
 }
 .carousel .carousel-inner .carousel-item img {
     height: 400px;
 }
 .card {
+    display:inline-block;
     margin: 1rem;
+    background-color: lightgray;
+    color: black;
+    border: 2px solid transparent;
+    width: 20rem;
+    text-align:center;
+}
+.card:hover {
+    border: 2px solid black;
+    background-color: white; 
 }
 .card-title {
     color: white;
@@ -15,20 +25,21 @@ body {
 }
 .card-block {
     margin: 20px;
+    overflow: hidden;
+
+}
+#card-link { 
+    color: black; 
 }
 .card-img-overlay {
     height: 60%;
 }
 p.card-text {
     overflow: hidden;
-    height: 4rem;
+    height: 6rem;
 }
 h2.card-title:first-letter {
     text-transform: capitalize;    
-}
-#ofdiv {
-    height: 8rem;
-    overflow: hidden;
 }
 .page-item {
     margin: 0 auto;
@@ -39,7 +50,7 @@ h2.card-title:first-letter {
 .page-link {
     background-color: black;
     color: rgba(255,255,255,0.5);
-    border:none;
+    border: 1px solid black;
 }
 .page-link:hover {
     background-color: black;

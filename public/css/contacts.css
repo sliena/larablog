@@ -1,28 +1,39 @@
 body {
-    background-image: linear-gradient(black, grey);
+    background-image: radial-gradient(white, black);
+}
+.row {
+    max-width: 100%;
+}
+#contactMe {
+    margin-top: 15rem;
+    margin-left: 11rem; 
+    color: white;
+    z-index: 10;
 }
 div.container {
-    margin-left: 0;
-    margin-top: 10rem;
+    display: inline-block;
+    width: 60%;
 }
 iframe {
     border: 1px solid black;
-    margin-top: 10rem;
     float: right;
     margin-right: 10rem;
 }
 .btn {
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: rgba(255,255,255,0.5);
     border: 1px solid black;
 }
 .btn:hover {
     background-color: black;
     color: white;
-    border: 1px solid black;
+    border: 1px solid white;
 }
 .form-control {
     border: 1px solid black;
+}
+.form-control {
+    background-color: lightgray;
 }
 #formCol {
     margin: 0 10rem;
