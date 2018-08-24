@@ -29,7 +29,7 @@
                             <a class="nav-link active"  href="/laravel/larablog/public/">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Blog</a>
+                            <a class="nav-link" href="/laravel/larablog/public/home">Blog</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/laravel/larablog/public/contacts">Contacts</a>
