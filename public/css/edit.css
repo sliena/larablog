@@ -5,3 +5,9 @@
 .footer-copyright {
     bottom: 0;
 }
+div.row {
+    max-width: 100%;
+}
+div.col-md-4 {
+    margin: 10rem auto;
+}

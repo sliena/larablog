@@ -40,7 +40,7 @@
     </div>
 
     <div class="container-fluid ">
-        <img src="https://www.w3schools.com/w3css/img_lights.jpg" class="img-fluid rounded mx-auto d-block" alt="Responsive image">
+        <img src="{{$blogimage}}" class="img-fluid rounded mx-auto d-block" alt="Responsive image">
             <div class="text-block"> 
                 <h1 class="text-monospace">{{$blogtitle}}</h1>
             </div>

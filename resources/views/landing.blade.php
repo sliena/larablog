@@ -1,44 +1,10 @@
-<!doctype html>
-<html lang="en">
+@extends('layouts.main')
 
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <link rel="stylesheet" href="/laravel/larablog/public/css/shared.css">
-        <link rel="stylesheet" href="/laravel/larablog/public/css/landing.css"> 
-
-        <script type="text/javascript" src="js/shared.js"></script>
-        
-        <title>Larablog</title>
+    @section('links')
+        <link rel="stylesheet" href="/laravel/larablog/public/css/landing.css">
+    @endsection
     
-    
-    
-    </head>
-
-    <body>
-  
-        <div class="container-fluid">
-            <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="/laravel/larablog/public/">Larablog</a>            
-                    <ul class="nav ml-auto text-monospace">
-                        <li class="nav-item">
-                            <a class="nav-link active"  href="/laravel/larablog/public/">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/laravel/larablog/public/edit">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/laravel/larablog/public/contacts">Contacts</a>
-                        </li>
-                    </ul> 
-                </div>           
-            </nav>
-        </div>
-
+    @section('slider')
         <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -66,16 +32,16 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
+    @endsection
 
-
-
+    @section('content')
         <div class="container">
             
             @foreach ($items as $blogitems)
             
             <a id="card-link" href="/laravel/larablog/public/blog/{{$blogitems->id}}" target="_blank">
                 <div class="card">
-                    <img class="card-img-top" src="https://www.w3schools.com/w3css/img_lights.jpg" alt="Card image cap" height="200" width="200">
+                    <img class="card-img-top" src="{{$blogitems->imgurl}}" alt="Card image cap" height="200" width="200">
                         <div class="card-img-overlay">
                             <h4 class="card-title text-monospace">{{$blogitems->title}}</h4>
                         </div>
@@ -92,31 +58,4 @@
             </div>
         
         </div>
-        
-        <!-- Footer -->
-        <footer class="page-footer font-small blue pt-4">
-
-            
-            <div class="footer-copyright  py-3">
-                <h6>Copyright © 2018</h6> 
-                <h6 id="time"></h6>
-            </div>
-
-        </footer>
-
-        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-
-    <script>
-        window.onscroll = function() {scrollFunction()};
-
-        setInterval(showTime, 1000);
-    </script>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    
-  </body>
-</html>
+    @endsection

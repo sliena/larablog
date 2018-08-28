@@ -17,10 +17,12 @@ Route::get('/blog/{id}', 'BlogItemController@blog_id');
 
 Route::get('/contacts', 'BlogItemController@contacts');
 
-Route::get('/edit', 'BlogItemController@edit');
-
 Route::post('/contacts', 'FormController@save_form');
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/edit', 'BlogItemController@edit')->middleware('auth');
+
+Route::post('/edit', 'BlogItemController@post_blog')->middleware('auth');

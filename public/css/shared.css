@@ -1,4 +1,10 @@
+html {
+    min-height: 100%;
+    position: relative;
+}
 body {
+    margin: 0 0 100px;
+    bottom: 50px;
     background-image: radial-gradient(gray, black);
 }
 .nav li a {
@@ -45,12 +51,17 @@ body {
       background-color: black;
       color: white;
       position: absolute;
+      bottom: 0;
       width: 100%;
+      height: 50px;
 }
 .footer-copyright h6 {
       color: white;
       padding-left: 5rem;
       display: inline-block;
+}
+.pt-4, .py-4 {
+    padding-top: 0!important;
 }
 #time {
       float: right;
@@ -65,5 +76,12 @@ body {
     background-color: black;
     color: white;
     border: 1px solid white;
+}
+.dropdown-menu.show {
+    background-color: black;
+}
+a.dropdown-item:hover {
+    background-color: black;
+    color: white;
 }
   

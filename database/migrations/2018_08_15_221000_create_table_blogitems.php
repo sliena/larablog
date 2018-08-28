@@ -21,6 +21,8 @@ class CreateTableBlogitems extends Migration
             $table->text('title');
 
             $table->text('body');
+
+            $table->longtext('imgurl');
             
             $table->timestamps();
         });

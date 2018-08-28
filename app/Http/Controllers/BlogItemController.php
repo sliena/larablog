@@ -10,7 +10,7 @@ class BlogItemController extends Controller
 {
     public function show() {
 
-        $blogitem = \App\BlogItem::paginate(6);
+        $blogitem = \App\BlogItem::orderBy('created_at', 'desc')->paginate(6);
 
         $now = new Carbon();
     
@@ -31,6 +31,7 @@ class BlogItemController extends Controller
     
             'blogbody' => $blogitem->body,
             'blogtitle' => $blogitem->title,
+            'blogimage' =>$blogitem->imgurl,
     
         ]);
     }
@@ -42,5 +43,19 @@ class BlogItemController extends Controller
 
     public function edit() {
         return view('edit');
+    }
+
+    public function post_blog() {
+
+        $blog = new \App\Blogitem;
+
+        $blog->title = \Request('title');
+        $blog->body = \Request('body');
+        $blog->imgurl = \Request('imgurl');
+
+        $blog->save();
+
+        return redirect('/');
+
     }
 }
