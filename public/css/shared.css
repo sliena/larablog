@@ -1,4 +1,6 @@
-
+body {
+    background-image: radial-gradient(gray, black);
+}
 .nav li a {
     color: white;
     opacity: 0.5;
@@ -27,7 +29,7 @@
     right: 30px;
     z-index: 99;
     font-size: 18px;
-    border: 1px solid black;
+    border: 1px solid rgba(255,255,255,0.5);
     outline: none;
     background-color: black;
     color: rgba(255,255,255,0.5);
@@ -35,23 +37,33 @@
     padding: 15px;
     border-radius: 4px;
   }
-  #myBtn:hover {
+#myBtn:hover {
       color: rgba(255,255,255,1);
       border: 1px solid white;
-  }
-  .footer-copyright {
+}
+.footer-copyright {
       background-color: black;
       color: white;
       position: absolute;
       width: 100%;
-  }
-  .footer-copyright h6 {
+}
+.footer-copyright h6 {
       color: white;
       padding-left: 5rem;
       display: inline-block;
-  }
-  #time {
+}
+#time {
       float: right;
       padding-right: 10rem;
-  }
+}
+.btn {
+    background-color: black;
+    color: rgba(255,255,255,0.5);
+    border: 1px solid rgba(255,255,255,0.5);
+}
+.btn:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
   

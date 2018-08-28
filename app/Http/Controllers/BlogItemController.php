@@ -10,7 +10,7 @@ class BlogItemController extends Controller
 {
     public function show() {
 
-        $blogitem = \App\BlogItem::simplePaginate(6);
+        $blogitem = \App\BlogItem::paginate(6);
 
         $now = new Carbon();
     
@@ -39,4 +39,8 @@ class BlogItemController extends Controller
 
         return view('contacts');
     }    
+
+    public function edit() {
+        return view('edit');
+    }
 }

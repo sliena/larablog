@@ -17,6 +17,8 @@ Route::get('/blog/{id}', 'BlogItemController@blog_id');
 
 Route::get('/contacts', 'BlogItemController@contacts');
 
+Route::get('/edit', 'BlogItemController@edit');
+
 Route::post('/contacts', 'FormController@save_form');
 
 Auth::routes();
