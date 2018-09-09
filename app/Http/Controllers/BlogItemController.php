@@ -32,6 +32,8 @@ class BlogItemController extends Controller
             'blogbody' => $blogitem->body,
             'blogtitle' => $blogitem->title,
             'blogimage' =>$blogitem->imgurl,
+            'thumbsUp' =>$blogitem->thumbs_up,
+            'thumbsDown' =>$blogitem->thumbs_down,
     
         ]);
     }

@@ -2,6 +2,7 @@
 
     @section('links')
         <link rel="stylesheet" href="/laravel/larablog/public/css/landing.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     @endsection
     
     @section('slider')
@@ -46,7 +47,11 @@
                             <h4 class="card-title text-monospace">{{$blogitems->title}}</h4>
                         </div>
                     <div class="card-block">                    
-                        <p class="card-text text-justify text-monospace">{{$blogitems->body}}</p>                  
+                        <p class="card-text text-justify text-monospace">{{$blogitems->body}}</p>
+                        <button type="button" class="btn btn-default" href="/laravel/larablog/public/contacts">Thumbs up</button>
+                        <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
+                        <p>{{$blogitems->thumbs_up - $blogitems->thumbs_down}}</p>
+                        <button type="button" class="btn btn-default">Thumbs down</button>                    
                     </div>
                 </div>
             </a>

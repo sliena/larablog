@@ -23,6 +23,10 @@ class CreateTableBlogitems extends Migration
             $table->text('body');
 
             $table->longtext('imgurl');
+
+            $table->integer('thumbs_up')->nullable();
+
+            $table->integer('thumbs_down')->nullable();
             
             $table->timestamps();
         });
