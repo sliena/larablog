@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateTableBlogitems extends Migration
+class BlogLikes extends Migration
 {
     /**
      * Run the migrations.
@@ -13,14 +13,11 @@ class CreateTableBlogitems extends Migration
      */
     public function up()
     {
-        Schema::create('blog_items', function (Blueprint $table) {
+        Schema::create('blog_likes', function (Blueprint $table) {
 
+            $table->integer('likes');
             $table->increments('id');
-            $table->integer('user_id')->nullable();
-            $table->text('title');
-            $table->text('body');
-            $table->longtext('imgurl')->nullable();         
-            $table->timestamps();
+
         });
     }
 
@@ -31,6 +28,7 @@ class CreateTableBlogitems extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('blog_items');
+        Schema::dropIfExists('blog_likes');
     }
 }
+ 

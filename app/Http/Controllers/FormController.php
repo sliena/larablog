@@ -32,32 +32,3 @@ class FormController extends Controller
        
 }
 
-
-
-
-
-/*$title = $request->input('name');
-        $content = $request->input('textarea');
-
-        Mail::send('emails.contact', ['title' => $title, 'content' => $content], function ($message)
-        {
-
-            $message->from('zebrasdesa@gmail.com', 'Christian Nwamba');
-
-            $message->to('chrisn@scotch.io');
-
-        });
-
-        /*return response()->json(['message' => 'Request completed']);*/
-
-        /*$data = array(
-            'email'=> $user->email,
-            'name' => $user->name,
-            'textarea' => $user->textarea,
-        ); 
-
-        Mail::send('emails.contact', $data, function($message) use ($data) {
-            $message->from($data['email']);
-            $message->to('zebrasdesa@gmail.com');
-            $message->subject($data['textarea']); 
-        });*/

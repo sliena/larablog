@@ -22,4 +22,16 @@ function showTime() {
         ));
 
     document.getElementById('time').innerHTML = date.toLocaleTimeString();
-  }
+}
+
+function myFunction() {
+    console.log('fuck this shit');
+}
+
+$(document).ready(function(){
+    /*$('.card').click(function() {
+        window.open('/laravel/larablog/public/blog/{{$blogitems->id}}')
+    });*/
+
+    $('')
+});

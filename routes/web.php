@@ -26,3 +26,5 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/edit', 'BlogItemController@edit')->middleware('auth');
 
 Route::post('/edit', 'BlogItemController@post_blog')->middleware('auth');
+
+Route::post('/', 'BlogItemController@thumbs_up');

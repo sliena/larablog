@@ -15,6 +15,7 @@
 .card:hover {
     background-color: white; 
     box-shadow: 10px 5px 15px rgba(0,0,0,0.5);
+    cursor: pointer;
 }
 .card-title {
     color: white;
@@ -45,26 +46,19 @@ h2.card-title:first-letter {
 .page-item.disabled  {
     visibility: hidden;    
 }
-.page-link {
-    background-color: black;
-    color: rgba(255,255,255,0.5);
-    border: 1px solid rgba(255,255,255,0.5);
-}
-.page-link:hover {
-    background-color: black;
-    color: rgba(255,255,255,1);
-    border: 1px solid white;
-}
-.btn-primary {
+.btn {
     color: black;
     background-color: white;
     border: 1px solid black;
+    z-index: 10;
 }
-.btn-primary:hover {
+.btn:hover {
     color: white;
     background-color: black;
     border: 1px solid black;
+    z-index: 10;
 }
 .fa {
     font-size: 50px!important;
+    z-index: 1000000000000;
 }

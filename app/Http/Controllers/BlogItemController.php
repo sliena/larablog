@@ -60,4 +60,14 @@ class BlogItemController extends Controller
         return redirect('/');
 
     }
+
+    public function thumbs_up($id) {
+
+        $blog = \App\BlogItem::find($id);
+
+        $blog->thumbs_up += 1;
+        $blog->save();
+
+        return redirect('/');
+    }
 }

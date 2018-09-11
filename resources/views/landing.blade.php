@@ -40,21 +40,19 @@
             
             @foreach ($items as $blogitems)
             
-            <a id="card-link" href="/laravel/larablog/public/blog/{{$blogitems->id}}" target="_blank">
-                <div class="card">
+            
+                <div class="card" onclick="location.href='/laravel/larablog/public/blog/{{$blogitems->id}}'">
                     <img class="card-img-top" src="{{$blogitems->imgurl}}" alt="Card image cap" height="200" width="200">
                         <div class="card-img-overlay">
                             <h4 class="card-title text-monospace">{{$blogitems->title}}</h4>
                         </div>
                     <div class="card-block">                    
                         <p class="card-text text-justify text-monospace">{{$blogitems->body}}</p>
-                        <button type="button" class="btn btn-default" href="/laravel/larablog/public/contacts">Thumbs up</button>
                         <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
-                        <p>{{$blogitems->thumbs_up - $blogitems->thumbs_down}}</p>
-                        <button type="button" class="btn btn-default">Thumbs down</button>                    
+                        <p>{{$blogitems->thumbs_up - $blogitems->thumbs_down}}</p>                
                     </div>
                 </div>
-            </a>
+            
 
             @endforeach
 
